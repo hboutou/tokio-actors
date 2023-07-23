@@ -58,7 +58,7 @@ async fn main() {
     let handle = Handle::new();
 
     for _ in 0..10 {
-        let num = handle.get_unique_id().await;
-        println!("next value is {num}");
+        let id = handle.get_unique_id().await;
+        println!("next id is {id}");
     }
 }
